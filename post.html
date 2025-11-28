@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="post-title">게시글</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="/">ei69996-ai의 블로그</a></h1>
+      <button id="theme-toggle" class="theme-toggle" aria-label="테마 전환">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </header>
+
+    <main>
+      <div class="post-header">
+        <a href="/" class="back-link">← 목록으로</a>
+        <h1 id="post-heading"></h1>
+        <div class="post-meta">
+          <span id="post-date"></span>
+          <span id="post-category"></span>
+          <div id="post-tags" class="post-tags"></div>
+        </div>
+      </div>
+
+      <article id="post-content" class="post-content">
+        <p class="loading">게시글을 불러오는 중...</p>
+      </article>
+
+      <div id="giscus-container" class="giscus-container"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ei69996-ai. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+</body>
+</html>
+
